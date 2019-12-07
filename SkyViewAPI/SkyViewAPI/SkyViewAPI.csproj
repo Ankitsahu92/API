@@ -115,6 +115,7 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_Start\CryptoEngine.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -137,6 +138,20 @@
     <Folder Include="App_Data\" />
     <Folder Include="Controllers\" />
     <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SykViewBL\SykViewBL.csproj">
+      <Project>{72214555-9d01-449e-a706-6dd9f0f70d78}</Project>
+      <Name>SykViewBL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SykViewDL\SykViewDL.csproj">
+      <Project>{d9419d31-e2f0-4606-9e15-2c25bf8b5e43}</Project>
+      <Name>SykViewDL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SykViewModal\SykViewModal.csproj">
+      <Project>{db115b40-952f-4a85-931a-e1fcb68a8771}</Project>
+      <Name>SykViewModal</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
